@@ -15,6 +15,6 @@ public class Program {
             }
             tracker.add(i);
         }
-        return new int[]{-1, -1};
+        return new int[]{};
     }
 }
