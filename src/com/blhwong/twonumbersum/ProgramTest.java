@@ -2,8 +2,8 @@ package com.blhwong.twonumbersum;
 
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 
 class ProgramTest {
@@ -14,6 +14,13 @@ class ProgramTest {
         assertEquals(output.length, 2);
         assertTrue(contains(output, -1));
         assertTrue(contains(output, 11));
+    }
+
+    @Test
+    public void TestCase2() {
+        int [] output = Program.twoNumberSum(new int[]{1, 2, 3, 4, 5}, 50);
+        assertEquals(output.length, 0);
+        assertFalse(contains(output, 1));
     }
 
     public boolean contains(int[] output, int val) {
