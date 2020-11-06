@@ -1,8 +1,6 @@
 package com.blhwong.spiraltraverse;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 class Program {

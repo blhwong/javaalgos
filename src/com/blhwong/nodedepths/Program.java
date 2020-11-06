@@ -6,18 +6,18 @@ import java.util.Deque;
 class Program {
 
     public static int nodeDepths(BinaryTree root) {
-         Deque<Tuple> q = new ArrayDeque<>();
-         q.add(new Tuple(root, 0));
-         int ans = 0;
-         while (!q.isEmpty()) {
-             Tuple curr = q.poll();
-             ans += curr.depth;
-             if (curr.tree.left != null) {
-                 q.offer(new Tuple(curr.tree.left, curr.depth + 1));
-             }
-             if (curr.tree.right != null) {
+        Deque<Tuple> q = new ArrayDeque<>();
+        q.add(new Tuple(root, 0));
+        int ans = 0;
+        while (!q.isEmpty()) {
+            Tuple curr = q.poll();
+            ans += curr.depth;
+            if (curr.tree.left != null) {
+                q.offer(new Tuple(curr.tree.left, curr.depth + 1));
+            }
+            if (curr.tree.right != null) {
                 q.offer(new Tuple(curr.tree.right, curr.depth + 1));
-             }
+            }
         }
         return ans;
     }

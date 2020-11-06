@@ -6,7 +6,7 @@ class Program {
 
     public static int[] smallestDifference(int[] arrayOne, int[] arrayTwo) {
         Arrays.sort(arrayOne);
-        int [] ans = new int[]{};
+        int[] ans = new int[]{};
         int smallestDifference = Integer.MAX_VALUE;
         for (int num : arrayTwo) {
             int closest = binarySearch(arrayOne, num);

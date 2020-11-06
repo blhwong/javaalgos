@@ -18,7 +18,7 @@ class ProgramTest {
         graph.children.get(0).children.get(1).addChild("I").addChild("J");
         graph.children.get(2).children.get(0).addChild("K");
         String[] expected = {"A", "B", "E", "F", "I", "J", "C", "D", "G", "K", "H"};
-        List<String> inputArray = new ArrayList<String>();
+        List<String> inputArray = new ArrayList<>();
         assertTrue(compare(graph.depthFirstSearch(inputArray), expected));
     }
 

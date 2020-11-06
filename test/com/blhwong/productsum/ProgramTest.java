@@ -13,7 +13,7 @@ class ProgramTest {
     @Test
     public void TestCase1() {
         List<Object> test =
-                new ArrayList<Object>(
+                new ArrayList<>(
                         Arrays.asList(
                                 5,
                                 2,

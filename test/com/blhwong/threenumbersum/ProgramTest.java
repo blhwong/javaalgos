@@ -22,7 +22,7 @@ class ProgramTest {
 
     @Test
     public void TestCase1() {
-        List<Integer[]> expected = new ArrayList<Integer[]>();
+        List<Integer[]> expected = new ArrayList<>();
         expected.add(new Integer[] {-8, 2, 6});
         expected.add(new Integer[] {-8, 3, 5});
         expected.add(new Integer[] {-6, 1, 5});
@@ -32,7 +32,7 @@ class ProgramTest {
 
     @Test
     public void TestCase2() {
-        List<Integer[]> expected = new ArrayList<Integer[]>();
+        List<Integer[]> expected = new ArrayList<>();
         expected.add(new Integer[] {1, 2, 3});
         List<Integer[]> output = Program.threeNumberSum(new int[] {1, 2, 3}, 6);
         assertTrue(this.compare(output, expected));
