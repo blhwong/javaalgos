@@ -20,9 +20,9 @@ class ProgramTest {
         root.right = new Program.BST(15);
         root.right.right = new Program.BST(22);
 
-        List<Integer> inOrder = Arrays.asList(new Integer[] {1, 2, 5, 5, 10, 15, 22});
-        List<Integer> preOrder = Arrays.asList(new Integer[] {10, 5, 2, 1, 5, 15, 22});
-        List<Integer> postOrder = Arrays.asList(new Integer[] {1, 2, 5, 5, 22, 15, 10});
+        List<Integer> inOrder = Arrays.asList(1, 2, 5, 5, 10, 15, 22);
+        List<Integer> preOrder = Arrays.asList(10, 5, 2, 1, 5, 15, 22);
+        List<Integer> postOrder = Arrays.asList(1, 2, 5, 5, 22, 15, 10);
 
         assertEquals(Program.inOrderTraverse(root, new ArrayList<Integer>()), inOrder);
         assertEquals(Program.preOrderTraverse(root, new ArrayList<Integer>()), preOrder);
